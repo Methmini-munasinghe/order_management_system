@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Simple Order Management System</h2>
+
+    <div class="products">
+        <h3>Products</h3>
+
+        <label>
+            <input type="checkbox" value="1" data-price="800">
+            Laptop ($800)
+        </label>
+
+        <label>
+            <input type="checkbox" value="2" data-price="20">
+            Mouse ($20)
+        </label>
+
+        <label>
+            <input type="checkbox" value="3" data-price="50">
+            Keyboard ($50)
+        </label>
+    </div>
+
+    <div class="payment">
+        <h3>Payment Method</h3>
+        <select id="paymentMethod">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+        </select>
+    </div>
+
+    <button onclick="placeOrder()">Place Order</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
